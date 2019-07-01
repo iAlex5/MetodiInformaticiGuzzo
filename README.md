@@ -32,7 +32,6 @@ You only need to:
 -set the number of cluster in the log in the variable NUM_CLUSTER
 -execute main.py.
 The method createInput from PrepareInput.py creates the other necessary files to execute.
-The program assume that the folder output and toBePlotted already exist.
 
 # dependencies / libraries:
 * Python3

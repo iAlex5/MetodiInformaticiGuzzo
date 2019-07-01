@@ -1,12 +1,17 @@
 from lxml import etree
 import datetime
-import numpy as np 
+import numpy as np
+import os
 
 def createInput(filename):
     buildGraph(filename)
     buildData(filename)
     xesReal(filename)
     graphReal(filename)
+    if not os.path.exists("output"):
+        os.mkdir("output")
+    if not os.path.exists("toBePlotted"):
+        os.mkdir("toBePlotted")
 
 def xesReal(filename):
     f1=open("input/"+filename+".xes", "r")
